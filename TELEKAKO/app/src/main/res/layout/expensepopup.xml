@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ExpensesActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/expenseimage"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_account_balance_wallet_24"
+                    android:layout_height="50dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:text="Add Expenses"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/itemExpense"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_style"
+                    android:hint="Expense Item Name "
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/itemStartingAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_style"
+                    android:hint="Starting Amount"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center">
+
+                </EditText>
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/itemamount"
+                    android:hint="New Expense Amount"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_style"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal">
+
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tt"
+                        android:text="Deadline Date"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/expenseDeadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title3"
+                        android:editable="false"
+                        android:hint="Select Date"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"></EditText>
+
+                </LinearLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/btnexpenseadd"
+                    android:layout_width="match_parent"
+                    android:text="SUBMIT"
+                    android:backgroundTint="@color/lemongreen"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content">
+                </Button>
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/exppercent"
+                    android:hint="Deadline Date"
+                    android:visibility="invisible"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_style"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal">
+
+                </EditText>
+
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/shwslctd"
+                    android:hint="Deadline Date"
+                    android:visibility="invisible"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_style"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

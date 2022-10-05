@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightblue_700"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_height="250dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageUser"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_baseline_account_circle">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/userfullname"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:text="FULLNAME"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/imageUser"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/profemail"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:text="user email address"
+                        android:layout_below="@+id/userfullname"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/profcontact"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:text="Contact No."
+                        android:layout_below="@+id/profemail"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_baseline_account_circle"
+                            android:layout_height="30dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="My Profile"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_assignment"
+                            android:layout_height="30dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/completedGoals"
+                            android:text="Completed goals"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_contact_mail"
+                            android:layout_height="30dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Contact Us on email"
+                            android:onClick="contact"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_assignment_24"
+                            android:layout_height="30dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Data Policy"
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_feedback_24"
+                            android:layout_height="30dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Send Us Feedback"
+                            android:onClick="feedback"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_share_24"
+                            android:layout_height="30dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Share the app"
+                            android:layout_marginLeft="30dp"
+                            android:onClick="share"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_star_24"
+                            android:layout_height="30dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Rate this App"
+                            android:layout_marginLeft="30dp"
+                            android:onClick="rate"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_exit_to_app_24"
+                            android:layout_height="30dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Logout"
+                            android:onClick="logout"
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

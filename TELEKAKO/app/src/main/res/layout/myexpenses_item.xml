@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    tools:context=".ExpensesActivity">
+
+    <!--<androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       app:cardCornerRadius="10dp"
+       android:layout_height="wrap_content">
+
+      <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:id="@+id/expenseHeading"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:text="Expense Item Name1 :"
+                   android:textSize="15dp"
+                   android:layout_height="match_parent">
+               </TextView>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:id="@+id/itemName"
+                   android:text="The Picked Name2"
+                   android:layout_marginLeft="20dp"
+                   android:layout_height="wrap_content">
+
+               </TextView>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:id="@+id/percentTitle"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:text="Percentage Expenditure :"
+                   android:textSize="15dp"
+                   android:layout_height="match_parent">
+               </TextView>
+
+
+               <TextView
+                   android:id="@+id/percentAge"
+                   android:layout_width="wrap_content"
+                   android:text="The Picked Name4"
+                   android:layout_marginLeft="20dp"
+                   android:layout_height="wrap_content">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/percentsign"
+                   android:layout_width="wrap_content"
+                   android:layout_marginRight="20dp"
+                   android:textColor="@color/lemongreen"
+                   android:textStyle="bold"
+                   android:layout_height="wrap_content"
+                   android:text="%"
+                   android:layout_alignParentRight="true">
+
+               </TextView>
+
+
+           </LinearLayout>
+
+
+
+           <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:text="Expense Item Name5 :"
+               android:textSize="15dp"
+               android:layout_height="match_parent">
+           </TextView>
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:text="The Picked Name6"
+               android:layout_marginLeft="20dp"
+               android:layout_height="wrap_content">
+
+           </TextView>
+
+
+       </LinearLayout><LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/duedate"
+               android:layout_width="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:text="Due Date:"
+               android:textSize="15dp"
+               android:layout_height="match_parent">
+           </TextView>
+
+
+           <TextView
+               android:layout_marginLeft="60dp"
+               android:layout_width="wrap_content"
+               android:id="@+id/itemName2"
+               android:layout_height="wrap_content"
+               android:text="Due Date">
+
+           </TextView>
+
+
+       </LinearLayout>
+
+           <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:text="Expense Item Name 9:"
+               android:textSize="15dp"
+               android:layout_height="match_parent">
+           </TextView>
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/itemOverdue2"
+               android:layout_marginLeft="30dp"
+               android:layout_height="wrap_content"
+               android:textColor="@color/lemongreen"
+               android:text="Overdue"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_below="@+id/percentAge"
+                   android:id="@+id/micurrencyitem"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/purple_200"
+                   android:text="Ugx"/>
+
+
+       </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:text="Expense Item Name 9:"
+                   android:textSize="15dp"
+                   android:layout_height="match_parent">
+               </TextView>
+
+
+               <TextView
+                   android:id="@+id/itemOverdue"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="Overdue"
+                   android:layout_marginLeft="30dp"
+                   android:textColor="@color/lemongreen"
+                   android:textSize="15sp">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/itemmicurrency2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ugx"
+                   android:textColor="@color/purple_200"/>
+
+
+           </LinearLayout>
+
+           <ProgressBar
+               android:id="@+id/progress1"
+               android:layout_width="match_parent"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_below="@+id/itemName"
+               android:layout_marginTop="10dp"
+               android:progressTint="@color/lemongreen"
+               style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+               android:progress="15"
+               android:layout_height="wrap_content">
+
+           </ProgressBar>
+
+
+       </LinearLayout>
+
+
+
+
+   </androidx.cardview.widget.CardView>
+ -->
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:id="@+id/maincard"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/relone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:text="Expense Item Name"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/itemName"
+                        android:layout_height="wrap_content"
+                        android:text="Saving Goal">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Expense Percentage"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/percentAge"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textStyle="bold"
+                        android:textColor="@color/lemongreen">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/percentsign"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/lemongreen"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="%">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progress1"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/itemName"
+                    android:layout_marginTop="10dp"
+                    android:progressTint="@color/lemongreen"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="15"
+                    android:layout_height="wrap_content">
+
+                </ProgressBar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/itemShowDuedate"
+                        android:layout_height="wrap_content"
+                        android:text="Deadline Date:">
+
+                    </TextView>
+                    <TextView
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/red"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/itemName2"
+                        android:layout_height="wrap_content"
+                        android:text="Due Date">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:text="Target Expenditure"
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/itemOverdue"
+                        android:layout_marginLeft="40dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lemongreen"
+                        android:text="Overdue">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/itemmicurrency2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/percentAge"
+                        android:text="ugx"
+                        android:textColor="@color/purple_200">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Current Expenditure"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/itemOverdue2"
+                        android:layout_marginLeft="40dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lemongreen"
+                        android:text="Overdue"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/micurrencyitem"
+                        android:layout_toLeftOf="@+id/slashLabel"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple_200"
+                        android:text="Ugx"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/maincard"
+            android:id="@+id/border"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <!--<Button
+            android:backgroundTint="@color/lemongreen"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Update"
+            android:textSize="15dp"
+            android:layout_height="match_parent">
+        </Button> -->
+
+
+    </LinearLayout>
+
+</LinearLayout>

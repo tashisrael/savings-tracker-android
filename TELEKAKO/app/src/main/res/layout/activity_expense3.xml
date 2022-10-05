@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ExpenseActivity3">
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="New Expenses"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/date4"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:hint="date here"
+                    android:background="@color/gray"
+                    android:inputType="date"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blue"
+                    android:layout_height="40dp">
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/targetitem"
+                    android:hint="Amount"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="40dp">
+
+                </EditText>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Enter Amount Spent"
+
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Submit"
+                    android:id="@+id/btnupdate1"
+                    android:backgroundTint="@color/lemongreen"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/showamount"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="@color/purple_500"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/showpercent"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="@color/purple_500"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/showperamt"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="@color/purple_500"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/showper2"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="@color/purple_500"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/showpercentage"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="@color/purple_500"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/realamt"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="@color/purple_500"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

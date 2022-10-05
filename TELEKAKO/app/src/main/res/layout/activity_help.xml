@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue_700"
+    android:orientation="vertical"
+    tools:context=".HelpActivity">
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/help_pic1"
+                android:layout_height="160dp">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="What Is Saving?"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:gravity="center"
+                    android:text="@string/Help1"
+                    android:textSize="15sp"
+                    >
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Saving tips?"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/Help2"
+                    android:textSize="15sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="YES, IT’S NOT easy to start saving!"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/bottle"
+                android:layout_height="160dp">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/Help3"
+                    android:textSize="15sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="52dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="You can join the TELEKAKO – SAVE SOME MO campaign, if:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/Help4"
+                    android:textSize="15sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="TELEKAKO – SAVE SOME MO!"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/Help5"
+                    android:textSize="15sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Ready to start your telekako journey?"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/wpv"
+                android:layout_height="200dp">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/pic10"
+                android:layout_height="180dp">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lightblue_700"
+                app:cardCornerRadius="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/Help6"
+                    android:textSize="15sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="CHILDREN AND SAVING"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="@string/Help7"
+                    android:textSize="15sp"
+                    >
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/children"
+                android:layout_height="160dp">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/happiness"
+                android:layout_height="160dp">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="CONTACT BE MONEY WISER"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/lightblue_700"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:gravity="center"
+                    android:text="@string/Help8"
+                    android:textSize="15sp"
+                    >
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

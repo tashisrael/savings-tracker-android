@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">TELEKAKO!</string>
+    <string name="about_us">TELEKAKO! Save Some Mo! is a quick savings tracking Application powered by Be Money Wiser. To use this app,you need some internet connection to create an account and Login.\n
+     </string>
+
+    <string name="about_us1">
+        BELOW ARE THE STEPS OF USING THE APP;\n\n
+        STEP1: Download the app from play store.\n\n
+        STEP2: Once the app is installed, connect to the internet and create an account by signing up.\n\n
+        STEP3: After creating an account, login with your email address and password.\n\n
+        STEP4: Click on START SAVING and create your goal.\n\n
+        STEP5: Once the goal has been created, click on MY SAVINGS on dashboard and keep updating your goal progress bar where you will be directed
+        to a page with a + button to update your goal amount until your savings total is 100%.\n\n
+        STEP6: Repeat the procedure starting from STEP4 and create as many savings goals as possible depending on your wish to plan for.\n\n
+        Let us Be Money Wiser, Lets Save Some Mo!!
+     </string>
+
+    <string name="purpose">Its main purpose is to Help you make achievable goals and
+        then help you to track your savings</string>
+    <string name="more_info">For More information about telekako or for any more inquiries,Contact our customer care +256-780633433/+256-708280493</string>
+
+    <string name="Help1">According to the Strategy for Financial Literacy in Uganda;
+        Saving is defined as keeping money aside for future use. You can save using your bank account,
+        your eggy / piggy bank, by buying animals, land, etc</string>
+
+    <string name="Help2">1. Save as soon as you earn; DAILY, WEEKLY, OR MONTHLY.\n
+                        2. Keep your savings safe.\n
+                         3. Save with a plan and goal(s) in mind.\n
+                        4. Save to start your investments.\n
+                        5. Carry your savings collected in your Eggy bank and SAVE SOME MO with a supervised / regulated financial institution.\n
+                        6. Start today, start small (10% of all your income), just start!
+    </string>
+
+    <string name="Help3">1. Saving requires a high level of sacrifice and self control.\n
+
+                        2. It is key to start small and slowly grow your level of saving.\n
+
+                        3. When you learn to save you will commit better to spending wisely, paying your loans in time, planning longer term and having value for all money you are blessed to receive!
+
+    </string>
+
+    <string name="Help4">1. You wish to improve your personal Savings skills or Savings discipline.\n
+
+                        2. You want your loved ones and stakeholders to SAVE SOME MO.\n
+
+                        3. You are a financial institution that wants to enable your customers to SAVE SOME MO and deposit more.\n
+                        4. You wish to donate to a vulnerable community such as youth, women, children, rural community, refugees, people with disabilities and informal sector. By helping them to SAVE SOME MO too.
+    </string>
+
+    <string name="Help5">TELEKAKO means that you need to save a portion of whatever you have earned as soon as you can.\n
+
+ You are encouraged to start small and acquire the discipline of saving and after SAVE SOME MO with your bank or regulated financial institution.\n
+
+        It means that you need the sacrifice; to save first before you spend on anything. To save with a plan aiming to achieve a specific goal in your life.
+
+    </string>
+
+    <string name="Help6">1. Do you earn money on a daily basis? TELEKAKO.\n
+        2. Have you received a money / financial gift? TELEKAKO.\n
+        3. Do you earn a salary? TELEKAKO.\n
+4. Maybe you are a church and  you receive offerings every sunday? TELEKAKO.\n
+5. You work in a restaurant, a boda boda etc. And  a customer gives you a tip? TELEKAKO.\n
+6. Are you a student that has received some pocket money? TELEKAKO.\n
+7. Has your business performed well and made some profit?  TELEKAKO.
+    </string>
+
+    <string name="Help7">Children need to save too so that they value money early in life.
+        They need to save with a goal so that they realize that it takes time to get money enough to buy the things we want.
+        So they will not ask for things from parents without mindfulness and consideration.
+        Keep their Eggy / Piggy banks safely and when full, carry savings to the bank / supervised financial
+        institution and SAVE SOME MO!
+    </string>
+
+    <string name="Help8">FACEBOOK/ YOU TUBE/ TWITTER/ INSTAGRAM/WEBSITE:\n
+        @bemoneywiser\n
+        PHONE:  +256780633433 +256708280493
+    </string>
+
+</resources>

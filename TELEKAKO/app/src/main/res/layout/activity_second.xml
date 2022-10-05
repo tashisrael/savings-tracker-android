@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SecondActivity">
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:id="@+id/stitle"
+                android:text="Saving Goal"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:id="@+id/percentshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/sSubtitle"
+                    android:textColor="@color/lemongreen"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="%"
+                    android:textSize="25sp"
+                    android:layout_toEndOf="@+id/sSubtitle"
+                    android:textColor="@color/lemongreen"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/sSubtitle">
+
+                </TextView>
+                <TextView
+                    android:layout_width="100dp"
+                   android:layout_marginRight="200dp"
+                    android:id="@+id/sSubtitle3"
+                    android:visibility="invisible"
+                    android:textSize="15sp"
+                    android:textColor="@color/lemongreen"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+           <androidx.cardview.widget.CardView
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:id="@+id/initialAmount"
+                       android:layout_width="wrap_content"
+                       android:layout_toLeftOf="@+id/initialCurrency"
+                       android:text="00000"
+                       android:textStyle="bold"
+                       android:textSize="25sp"
+                       android:textColor="@color/lemongreen"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+                   <TextView
+                       android:id="@+id/initialCurrency"
+                       android:layout_width="wrap_content"
+                       android:layout_toLeftOf="@+id/strokeamount"
+                       android:text="ugx"
+                       android:textStyle="bold"
+                       android:textSize="25sp"
+                       android:textColor="@color/purple_200"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+                   <TextView
+                       android:id="@+id/strokeamount"
+                       android:layout_width="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:text="/"
+                       android:textSize="25sp"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+                   <TextView
+                       android:id="@+id/finalAmount"
+                       android:layout_toRightOf="@+id/strokeamount"
+                       android:layout_width="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:text="00000"
+                       android:textStyle="bold"
+                       android:textSize="25sp"
+                       android:textColor="@color/lemongreen"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+                   <TextView
+                       android:id="@+id/finalcurrency"
+                       android:layout_toRightOf="@id/finalAmount"
+                       android:layout_width="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:text="ugx"
+                       android:textStyle="bold"
+                       android:textSize="25sp"
+                       android:textColor="@color/purple_200"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+
+
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+
+
+
+            <TableLayout
+                android:id="@+id/tt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop = "0dp"
+                android:layout_marginBottom = "20dp"
+                >
+
+
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_marginTop="30dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Savings Amount"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/sover"
+                        android:textSize="20sp"
+                        android:text="200000"
+                        android:textColor="@color/lemongreen"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </TableRow>
+
+                <TableRow
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Was Open On"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="19-05-2021"
+                        android:id="@+id/startingdate"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="You have Saved"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/startMoney"
+                        android:layout_width="wrap_content"
+                        android:text="0shs"
+                        android:textSize="20sp"
+                        android:textColor="@color/lemongreen"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Remaining Amount"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/remainMoney"
+                        android:layout_width="wrap_content"
+                        android:text="0shs"
+                        android:textSize="20sp"
+                        android:textColor="@color/lemongreen"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Goal Deadline"
+
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="20-10-2023"
+                        android:id="@+id/sDeadline"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="80dp"
+                        android:textColor="@color/red"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/addbutton"
+                    android:layout_width="60dp"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true">
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

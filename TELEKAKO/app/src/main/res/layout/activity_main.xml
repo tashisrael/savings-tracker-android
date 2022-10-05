@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+         <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                 android:layout_height="match_parent">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:text="TELEKAKO!"
+                     android:textStyle="bold"
+                     android:id="@+id/title1"
+                     android:textColor="@color/purple_500"
+                     android:textSize="40sp"
+                     android:gravity="center"
+                     android:layout_marginTop="90dp"
+                     android:layout_height="wrap_content">
+                 </TextView>
+                 <TextView
+                     android:layout_below="@+id/title1"
+                     android:layout_width="match_parent"
+                     android:text="Save Some Mo!"
+                     android:textStyle="bold"
+                     android:id="@+id/title2"
+                     android:gravity="center"
+                     android:textSize="25sp"
+                     android:layout_marginTop="1dp"
+                     android:layout_height="wrap_content">
+                 </TextView>
+
+                 <TextView
+                     android:layout_below="@id/title1"
+                     android:layout_width="wrap_content"
+                     android:layout_marginRight="40dp"
+                     android:layout_marginLeft="40dp"
+                     android:text="Get a plan of how and when you can achieve your financial goals using Telekako App!"
+                     android:id="@+id/subtitle"
+                     android:textSize="20sp"
+                     android:gravity="center"
+                     android:layout_marginTop="100dp"
+                     android:layout_height="wrap_content">
+                 </TextView>
+                 <Button
+                     android:id="@+id/btngetstarted"
+                     android:layout_width="match_parent"
+                     android:text="Get Started"
+                     android:layout_below="@+id/subtitle"
+                     android:textStyle="bold"
+                     android:textSize="30sp"
+                     android:textColor="@color/white"
+                     android:background="@drawable/field_style"
+                     android:layout_marginTop="80dp"
+                     android:layout_marginLeft="50dp"
+                     android:layout_marginRight="50dp"
+                     android:layout_height="wrap_content"
+                     android:gravity="center">
+                 </Button>
+             </LinearLayout>
+
+         </ScrollView>
+
+
+
+</LinearLayout>

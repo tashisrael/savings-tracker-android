@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ExpenseActivity2">
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Your Telekako Expenses Details:"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_below="@+id/heading"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/itemTitle"
+                        android:layout_width="wrap_content"
+                        android:text="Expense Item Name :"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:layout_below="@+id/heading"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="45dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/stitle"
+                        android:text="Saving Goal"
+                        android:layout_toRightOf="@+id/itemTitle"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_below="@id/itemTitle"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/stitle1"
+                        android:text="Percentage Expenditure :"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_below="@id/stitle"
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_toEndOf="@id/stitle1"
+                        android:id="@+id/sSubtitle"
+                        android:textColor="@color/lemongreen"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/stitle1">
+
+                    </TextView>
+                    <TextView
+                        android:layout_below="@+id/stitle"
+                        android:layout_width="wrap_content"
+                        android:text="%"
+                        android:textSize="15sp"
+                        android:layout_toEndOf="@+id/sSubtitle"
+                        android:textColor="@color/lemongreen"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/sSubtitle">
+
+                    </TextView>
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--    <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/gray"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/percentshow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="25sp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/sSubtitle"
+                            android:textColor="@color/lemongreen"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="%"
+                            android:textSize="25sp"
+                            android:layout_toEndOf="@+id/sSubtitle"
+                            android:textColor="@color/lemongreen"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@+id/sSubtitle">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/sSubtitle3"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="200dp"
+                            android:textColor="@color/lemongreen"
+                            android:textSize="15sp"
+                            android:visibility="invisible">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView> -->
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop = "0dp"
+                    android:layout_marginBottom = "20dp"
+                    >
+
+
+                    <TableRow
+                        android:padding="5dp"
+                        android:layout_marginTop="30dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Target Expenditure"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/sover"
+                            android:textSize="20sp"
+                            android:text="200000"
+                            android:textColor="@color/lemongreen"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="35dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:padding="5dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Was Set On"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="19-05-2021"
+                            android:textColor="@color/black"
+                            android:id="@+id/startingdate"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="35dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:padding="5dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Amount Spent So far"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/startMoney"
+                            android:layout_width="wrap_content"
+                            android:text="0shs"
+                            android:textSize="20sp"
+                            android:textColor="@color/lemongreen"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="35dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:padding="5dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Expense Deadline"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="20-10-2023"
+                            android:id="@+id/sDeadline"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="35dp"
+                            android:textColor="@color/red"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Below is the Summary Of the Amount Spent Over the your target expenditure amount"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content">
+
+
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/initialAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_toLeftOf="@+id/initialCurrency"
+                        android:text="00000"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/lemongreen"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/initialCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_toLeftOf="@+id/strokeamount"
+                        android:text="ugx"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/purple_200"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/strokeamount"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="/"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/finalAmount"
+                        android:layout_toRightOf="@+id/strokeamount"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="00000"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/lemongreen"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/finalcurrency"
+                        android:layout_toRightOf="@id/finalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="ugx"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/purple_200"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/addbutton"
+                    android:layout_width="100dp"
+                    android:src="@drawable/ic_baseline_remove_circle_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="100dp">
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

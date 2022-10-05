@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    tools:context=".HistoryActivity">
+    <TextView
+        android:id="@+id/showemail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="-12dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/maincard"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Saving Goal"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/percentAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/percentsign"
+                    android:text="10"
+                    android:textColor="@color/lemongreen"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/percentsign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="%"
+                    android:textColor="@color/lemongreen"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ProgressBar
+                    android:id="@+id/progress1"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:progress="15"
+                    android:progressTint="@color/lemongreen">
+
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/itemShowDuedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Due Date:">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/itemName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress1"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/itemShowDuedate"
+                    android:text="Due Date">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/itemOverdue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/percentAge"
+                    android:layout_marginTop="30dp"
+                    android:layout_toLeftOf="@+id/itemmicurrency2"
+                    android:text="Overdue"
+                    android:textColor="@color/lemongreen">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/itemmicurrency2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/percentAge"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:text="ugx"
+                    android:textColor="@color/purple_200">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/slashLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/percentAge"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/itemOverdue"
+                    android:layout_toLeftOf="@+id/itemOverdue"
+                    android:layout_toRightOf="@+id/itemOverdue2"
+                    android:text="/"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/itemOverdue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/percentAge"
+                    android:layout_marginTop="30dp"
+                    android:layout_toLeftOf="@id/micurrencyitem"
+                    android:text="Overdue"
+                    android:textColor="@color/lemongreen" />
+
+                <TextView
+                    android:id="@+id/micurrencyitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/percentAge"
+                    android:layout_marginTop="30dp"
+                    android:layout_toLeftOf="@+id/slashLabel"
+                    android:text="Ugx"
+                    android:textColor="@color/purple_200" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/maincard"
+            android:id="@+id/border"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
